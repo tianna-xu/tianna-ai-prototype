@@ -35,7 +35,6 @@ export function SkillsTab({ skills }: SkillsTabProps) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         {skills.map((skill) => {
-          const pct = (skill.level / skill.maxLevel) * 100;
           return (
             <div
               key={skill.id}
